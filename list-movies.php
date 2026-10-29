@@ -13,7 +13,9 @@ $results = mysqli_query($mysqli, $sql);
 <?php while($a_row = mysqli_fetch_assoc($results)):?>
 <tr>
 <td><?=$a_row['movie_name']?></td>
+<td><?=$a_row['genre']?></td>
 <td><?=$a_row['price']?></td>
+<td><?=$a_row['released_date']?></td>
 </tr>
 <?php endwhile;?>
 </table>
